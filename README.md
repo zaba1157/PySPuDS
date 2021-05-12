@@ -1,3 +1,5 @@
 # PySPuDS
 
-Python wrapper to Strucutre Prediction Diagnostic Software (SPuDS) for predicting ABX3 perovskite structures (.cif) in up to 11 unique Glazer tilt systems.
+##PySPuDS is a python wrapper to Structure Prediction and Diagnostic Software (SPuDS) enabling high-throughput perovskite (Glazer tilt) structure predictions.
+
+Currently PySPuDS only generates structures (.cif files) for ABX3 compositions (SPuDS menu item 1). 
