@@ -15,5 +15,16 @@ Download this repository (PySPuDS) and edit the SPuDS_install_directory variable
   - pymatgen
 
 ## Usage
-
 from PySPuDS import SPuDS
+
+A = {'Ca':2}
+B = {'Ti':4}
+X = {'O':-2}
+
+Model = SPuDS(A,B,X,store_dir = 'PySPuDS_results')
+
+for tilt in Model.allowed_tilts:   
+    Model.write_default_input(tilt)
+    Model.run()
+    Model.write_cif()
+    Model.store_results()
