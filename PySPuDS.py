@@ -16,7 +16,13 @@ import json
 import pandas as pd
 
 module_dir = os.getcwd()
-SPuDS_install_directory = os.getcwd()
+
+#####################################################
+"""Edit path to your SPuDS installation directory."""
+SPuDS_install_directory = '/path/to/your/SPuDS/install_directory'
+#SPuDS_install_directory = os.getcwd()
+#####################################################
+
 
 class SPuDS_BVparams():
     """
