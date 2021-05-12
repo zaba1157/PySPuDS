@@ -14,8 +14,8 @@ Download this repository (PySPuDS) and edit the SPuDS_install_directory variable
 ## Requirements
   - pymatgen
 
-## Usage
-''' python
+## Usage 
+```python
 from PySPuDS import SPuDS
 
 A = {'Ca':2}
@@ -29,4 +29,4 @@ for tilt in Model.allowed_tilts:
     Model.run()
     Model.write_cif()
     Model.store_results()
-'''
+```
