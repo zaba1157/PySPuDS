@@ -16,7 +16,7 @@ import json
 import pandas as pd
 
 module_dir = os.getcwd()
-SPuDS_install_dir = os.getcwd()
+SPuDS_install_directory = os.getcwd()
 
 class SPuDS_BVparams():
     """
@@ -47,7 +47,7 @@ class SPuDS_BVparams():
         """
         Reads table of SPuDS provided bond valence parameters.
         """
-        bvfile = os.path.join(module_dir, "bvparm16.cif")
+        bvfile = os.path.join(SPuDS_install_directory, "bvparm16.cif")
         params = pd.read_csv(bvfile, sep='\s+',
                                   header=None,
                                   names=['Atom1', 'Atom1_valence',
@@ -109,7 +109,7 @@ class SPuDS():
         self.Bs = Bs
         self.Xs = Xs
         self.store_dir = store_dir
-        self.SPuDS_dir = SPuDS_install_dir        
+        self.SPuDS_dir = SPuDS_install_directory        
         
         # SPuDS compatible nomenclature for single letter elements (i.e. K_) 
         spuds_single_cats = ['K','P','U','V','W','Y']
