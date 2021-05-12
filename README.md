@@ -6,6 +6,8 @@ Currently PySPuDS only supports ABX<sub>3</sub> structure generation (SPuDS menu
 Future support for SPuDS menu items 3, 6, and 7 is planned.
 
 ## Installation
-
+### SPuDS
+Download and extract the [DOS,command line] version of [SPuDS](https://www.unf.edu/~michael.lufaso/spuds/) to your specified install directory.
+### PySPuDS
 
 
