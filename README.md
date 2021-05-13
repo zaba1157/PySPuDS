@@ -6,9 +6,9 @@ Currently PySPuDS only supports ABX<sub>3</sub> structure generation (SPuDS menu
 Future support for SPuDS menu items 3, 6, and 7 is planned.
 
 ## Installation
-### SPuDS
+#### SPuDS
 Download and extract the [DOS, command line] version of [SPuDS](https://www.unf.edu/~michael.lufaso/spuds/) to your specified SPuDS-install-directory.
-### PySPuDS
+#### PySPuDS
 Download this repository (PySPuDS) and edit the SPuDS_install_directory variable in PySPuDS.py to point to your SPuDS-install-directory.
 
 ## Requirements
@@ -27,7 +27,7 @@ A = {'Ca':2} #dict of cation A {element: oxidation state}
 B = {'Ti':4} #dict of cation B {element: oxidation state}
 X = {'O':-2} #dict of anion X {element: oxidation state}
 
-store_directory = 'SPuDS_output' #where to store ouput .cif files
+store_directory = 'SPuDS_output' #where to store SPuDS ouput and .cif files
 
 Model = SPuDS(A, B, X, store_dir = store_directory)
 
