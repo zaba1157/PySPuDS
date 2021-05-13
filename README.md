@@ -27,7 +27,7 @@ A = {'Ca':2} #dict of cation A {element: oxidation state}
 B = {'Ti':4} #dict of cation B {element: oxidation state}
 X = {'O':-2} #dict of anion X {element: oxidation state}
 
-store_directory = 'SPuDS_output' #where to store SPuDS ouput and .cif files
+store_directory = 'SPuDS_output' #where to store SPuDS output and .cif files
 
 Model = SPuDS(A, B, X, store_dir = store_directory)
 
