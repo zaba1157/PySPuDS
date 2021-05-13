@@ -10,7 +10,7 @@ Future support for SPuDS menu items 3, 6, and 7 is planned.
 #### SPuDS
 Download and extract the [DOS, command line] version of [SPuDS](https://www.unf.edu/~michael.lufaso/spuds/) to your specified SPuDS-install-directory.
 
-*Note: SPuDS only supports Windows OS*
+Note: **SPuDS only supports Windows OS**
 
 
 #### PySPuDS
