@@ -8,21 +8,21 @@ Future support for SPuDS menu items 3, 6, and 7 is planned.
 
 
 # Installation
-## SPuDS
+### SPuDS
 Download and extract the [DOS, command line] version of [SPuDS](https://www.unf.edu/~michael.lufaso/spuds/) to your specified SPuDS-install-directory.
 
 Note: SPuDS only supports Windows OS
 
-## PySPuDS
+### PySPuDS
 Download this repository (**PySPuDS**) and edit the ```SPuDS_install_directory``` variable in ```PySPuDS.py``` to point to your SPuDS-install-directory.
 
 
-## Requirements
+# Requirements
   - SPuDS
   - pymatgen
 
 
-## Usage
+# Usage
 SPuDS requires only A/B site assignments, elements, and oxidation states to predict Glazer tilt structures. Similarly, the ```SPuDS()``` class imported from ```PySPuDS.py``` requires only dictionaries of A, B, and X elements with corresponding oxidation states. The ```store_dir``` variable defaults to 'SPuDS_output', but can be changed upon initialization of the ```SPuDS()``` class.
 
 
