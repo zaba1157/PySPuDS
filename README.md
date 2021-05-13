@@ -13,7 +13,7 @@ Download and extract the [DOS, command line] version of [SPuDS](https://www.unf.
 Note: SPuDS only supports Windows OS
 
 ### PySPuDS
-Download this repository (**PySPuDS**) and edit the SPuDS_install_directory variable in ```PySPuDS.py``` to point to your SPuDS-install-directory.
+Download this repository (**PySPuDS**) and edit the ```SPuDS_install_directory``` variable in ```PySPuDS.py``` to point to your SPuDS-install-directory.
 
 ## Requirements
   - SPuDS
