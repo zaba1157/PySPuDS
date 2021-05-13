@@ -12,17 +12,24 @@ Download and extract the [DOS, command line] version of [SPuDS](https://www.unf.
 Download this repository (PySPuDS) and edit the SPuDS_install_directory variable in PySPuDS.py to point to your SPuDS-install-directory.
 
 ## Requirements
+  - SPuDS
   - pymatgen
 
-## Usage 
+## Usage
+SPuDS requires only elements and oxidation states to predict Glazer tilt structures. Similarly, the SPuDS() class (imported from PySPuDS.py), requires only a dictionary of A-, B-, and X- elements with corresponding oxidation states. The store_dir variable defaults to 'SPuDS_output', but can be changed upon initialization of the SPuDS() class.
+For a given Glazer tilt system, PySPuDS: 1) writes an input file (defaults to no Jahn-Teller distortions at 298 K), 2) runs the SPuDS program using the generated input file, 3) creates a .cif structure file using symmetry operations from ABX3_symops.json, and 4) stores the results in the specified store_dir using a default naming scheme.
+
+## Example Usage 
 ```python
 from PySPuDS import SPuDS
 
-A = {'Ca':2}
-B = {'Ti':4}
-X = {'O':-2}
+A = {'Ca':2} #dict of cation A {element: oxidation state}
+B = {'Ti':4} #dict of cation B {element: oxidation state}
+X = {'O':-2} #dict of anion X {element: oxidation state}
 
-Model = SPuDS(A,B,X,store_dir = 'PySPuDS_results')
+store_directory = 'SPuDS_output' #where to store ouput .cif files
+
+Model = SPuDS(A, B, X, store_dir = store_directory)
 
 for tilt in Model.allowed_tilts:   
     Model.write_default_input(tilt)
