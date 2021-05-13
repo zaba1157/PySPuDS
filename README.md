@@ -1,6 +1,6 @@
 # PySPuDS
 
-**PySPuDS** is a python wrapper to Structure Prediction and Diagnostic Software [(SPuDS)](https://www.unf.edu/~michael.lufaso/spuds/) enabling high-throughput perovskite (Glazer tilt) structure predictions.
+**PySPuDS** is a python wrapper to [Structure Prediction and Diagnostic Software](https://www.unf.edu/~michael.lufaso/spuds/) (SPuDS) enabling high-throughput perovskite (Glazer tilt) structure predictions.
 
 Currently **PySPuDS** only supports ABX<sub>3</sub> structure generation, i.e. SPuDS menu item 1. 
 
