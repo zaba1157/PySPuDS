@@ -1,8 +1,8 @@
 # PySPuDS
 
-PySPuDS is a python wrapper to [Structure Prediction and Diagnostic Software (SPuDS)](https://www.unf.edu/~michael.lufaso/spuds/) enabling high-throughput perovskite (Glazer tilt) structure predictions.
+**PySPuDS** is a python wrapper to [Structure Prediction and Diagnostic Software (SPuDS)](https://www.unf.edu/~michael.lufaso/spuds/) enabling high-throughput perovskite (Glazer tilt) structure predictions.
 
-Currently PySPuDS only supports ABX<sub>3</sub> structure generation, i.e. SPuDS menu item 1. 
+Currently **PySPuDS** only supports ABX<sub>3</sub> structure generation, i.e. SPuDS menu item 1. 
 
 Future support for SPuDS menu items 3, 6, and 7 is planned.
 
@@ -13,16 +13,16 @@ Download and extract the [DOS, command line] version of [SPuDS](https://www.unf.
 Note: SPuDS only supports Windows OS
 
 #### PySPuDS
-Download this repository (PySPuDS) and edit the SPuDS_install_directory variable in PySPuDS.py to point to your SPuDS-install-directory.
+Download this repository (**PySPuDS**) and edit the SPuDS_install_directory variable in ```PySPuDS.py``` to point to your SPuDS-install-directory.
 
 ## Requirements
   - SPuDS
   - pymatgen
 
 ## Usage
-SPuDS requires only A/B site assignments, elements, and oxidation states to predict Glazer tilt structures. Similarly, the ```SPuDS()``` class imported from PySPuDS.py requires only dictionaries of A, B, and X elements with corresponding oxidation states. The store_dir variable defaults to 'SPuDS_output', but can be changed upon initialization of the ```SPuDS()``` class.
+SPuDS requires only A/B site assignments, elements, and oxidation states to predict Glazer tilt structures. Similarly, the ```SPuDS()``` class imported from ```PySPuDS.py``` requires only dictionaries of A, B, and X elements with corresponding oxidation states. The store_dir variable defaults to 'SPuDS_output', but can be changed upon initialization of the ```SPuDS()``` class.
 
-For a given Glazer tilt system, PySPuDS: 1) writes an input file (defaults to no Jahn-Teller distortions at 298 K), 2) runs the SPuDS program using the generated input file, 3) creates a .cif structure file using symmetry operations from ABX3_SPuDS_symops.json, and 4) stores the results in the specified store_dir using a default naming scheme.
+For a given Glazer tilt system, **PySPuDS**: 1) writes an input file (defaults to no Jahn-Teller distortions at 298 K), 2) runs the SPuDS program using the generated input file, 3) creates a .cif structure file using symmetry operations from ```ABX3_SPuDS_symops.json```, and 4) stores the results in the specified store_dir using a default naming scheme.
 
 ## Example Usage 
 ```python
