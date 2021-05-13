@@ -33,7 +33,7 @@ Download this repository (**PySPuDS**) and edit the ```SPuDS_install_directory``
 SPuDS requires only A/B site assignments, elements, and oxidation states to predict Glazer tilt structures. Similarly, the ```SPuDS()``` class imported from ```PySPuDS.py``` requires only dictionaries of A, B, and X elements with corresponding oxidation states. The ```store_dir``` variable defaults to 'SPuDS_output', but can be changed upon initialization of the ```SPuDS()``` class.
 
 
-For a given Glazer tilt system, **PySPuDS**: 1) writes an input file (defaults to no Jahn-Teller distortions at 298 K ), 2) runs the SPuDS program using the generated input file, 3) creates a .cif structure file using symmetry operations specified in ```ABX3_SPuDS_symops.json```, and 4) stores the results in the specified ```store_dir``` using a default naming scheme.
+For a given Glazer tilt system, **PySPuDS**: 1) writes an input file (defaults to no Jahn-Teller distortions at 298 K ), 2) runs the SPuDS program using the generated input file, 3) creates a pymatgen-compatible .cif structure file using symmetry operations specified in ```ABX3_SPuDS_symops.json```, and 4) stores the results in the specified ```store_dir``` using a default naming scheme.
 
 
 ### Example Usage 
