@@ -24,7 +24,7 @@ Download this repository (**PySPuDS**) and copy ```PySPuDS.py``` and ```ABX3_SPu
 
 # Requirements
   - Windows os
-  - SPuDS (DOS version > 2.20.08.06)
+  - SPuDS (DOS version > 2.21.05.11)
   - pymatgen
 
 
