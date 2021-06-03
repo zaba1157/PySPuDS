@@ -16,12 +16,10 @@ import json
 import pandas as pd
 
 module_dir = os.getcwd()
+SPuDS_install_directory = os.getcwd()
 
-#####################################################
-"""Edit path to your SPuDS installation directory."""
-SPuDS_install_directory = '/path/to/your/SPuDS/install_directory'
-#SPuDS_install_directory = os.getcwd()
-#####################################################
+#"""Edit path to your SPuDS installation directory."""
+#SPuDS_install_directory = '/path/to/your/SPuDS/install_directory'
 
 
 class SPuDS_BVparams():
@@ -53,13 +51,13 @@ class SPuDS_BVparams():
         """
         Reads table of SPuDS provided bond valence parameters.
         """
-        bvfile = os.path.join(SPuDS_install_directory, "bvparm16.cif")
+        bvfile = os.path.join(SPuDS_install_directory, "bvparm20.cif")
         params = pd.read_csv(bvfile, sep='\s+',
                                   header=None,
                                   names=['Atom1', 'Atom1_valence',
                                          'Atom2', 'Atom2_valence',
                                          'Ro', 'B', 'ref_id', 'details'],
-                                  skiprows=172,
+                                  skiprows=179,
                                   skipfooter=1,
                                   index_col=False,
                                   engine="python")
