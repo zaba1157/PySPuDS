@@ -16,8 +16,9 @@ Download and extract the [DOS, command line] version of [SPuDS](https://www.unf.
 Note: SPuDS is only supported on Windows os
 
 ### PySPuDS
-Download this repository (**PySPuDS**) and edit the ```SPuDS_install_directory``` variable in ```PySPuDS.py``` to point to your SPuDS-install-directory.
+Download this repository (**PySPuDS**) and copy ```PySPuDS.py``` and ```ABX3_SPuDS_symops.json``` to your specified SPuDS-install-directory.
 
+<del>Download this repository (**PySPuDS**) and edit the ```SPuDS_install_directory``` variable in ```PySPuDS.py``` to point to your SPuDS-install-directory.<\del>
 
 
 
