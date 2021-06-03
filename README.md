@@ -31,7 +31,7 @@ Download this repository (**PySPuDS**) and copy ```PySPuDS.py``` and ```ABX3_SPu
 
 
 # Usage
-SPuDS requires only A/B site assignments, elements, and oxidation states to predict Glazer tilt structures. Similarly, the ```SPuDS()``` class imported from ```PySPuDS.py``` requires only dictionaries of A, B, and X elements with corresponding oxidation states. The ```store_dir``` variable defaults to 'SPuDS_output', but can be changed upon initialization of the ```SPuDS()``` class.
+SPuDS requires only A/B site assignments, elements, and oxidation states to predict Glazer tilt structures. Similarly, the ```SPuDS()``` class imported from ```PySPuDS.py``` requires only dictionaries of A, B, and X elements with corresponding oxidation states. The ```store_dir``` variable defaults to 'PySPuDS_results', but can be changed upon initialization of the ```SPuDS()``` class.
 
 
 For a given Glazer tilt system, **PySPuDS**: 1) writes an input file (defaults to no Jahn-Teller distortions at 298 K ), 2) runs the SPuDS program using the generated input file, 3) creates a pymatgen-compatible .cif structure file using symmetry operations specified in ```ABX3_SPuDS_symops.json```, and 4) stores the results in the specified ```store_dir``` using a default naming scheme.
@@ -45,7 +45,7 @@ A = {'Ca':2} #dict of cation A {element: oxidation state}
 B = {'Ti':4} #dict of cation B {element: oxidation state}
 X = {'O':-2} #dict of anion X {element: oxidation state}
 
-store_directory = 'SPuDS_output' #where to store SPuDS output and .cif files
+store_directory = 'PySPuDS_results' #where to store SPuDS output and .cif files
 
 Model = SPuDS(A, B, X, store_dir = store_directory)
 
