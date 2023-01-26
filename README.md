@@ -4,7 +4,7 @@
 
 Currently **PySPuDS** only supports ABX<sub>3</sub> structure generation, i.e. SPuDS menu item 1. 
 
-Future support for SPuDS menu items 3, 6, and 7 is planned.
+run_spuds_v1.py has limited support for menu items 1, 3, 6, and 7. This version is static with the relase of the [Theoretical Multinary Perovskite Oxides Dataset](https://contribs.materialsproject.org/projects/Multinary_Oxides)
 
 
 
@@ -33,6 +33,11 @@ SPuDS requires only A/B site assignments, elements, and oxidation states to pred
 
 For a given Glazer tilt system, **PySPuDS**: 1) writes an input file (defaults to no Jahn-Teller distortions at 298 K ), 2) runs the SPuDS program using the generated input file, 3) creates a pymatgen-compatible .cif structure file using symmetry operations specified in ```ABX3_SPuDS_symops.json```, and 4) stores the results in the specified ```store_dir``` using a default naming scheme.
 
+# run_spuds_v1.py
+This version has similar usage just replace the import line with:
+```python
+from run_spuds_v1 import SPuDS
+```
 
 ### Example Usage 
 ```python
