@@ -4,7 +4,7 @@
 
 Currently **PySPuDS** only supports ABX<sub>3</sub> structure generation, i.e. SPuDS menu item 1. 
 
-run_spuds_v1.py has limited support for menu items 1, 3, 6, and 7. This version is static with the relase of the [Theoretical Multinary Perovskite Oxides Dataset](https://contribs.materialsproject.org/projects/Multinary_Oxides)
+run_spuds_v1.py has limited support for menu items 1, 3, 6, and 7. This version is static with the release of the [Theoretical Multinary Perovskite Oxides Dataset](https://contribs.materialsproject.org/projects/Multinary_Oxides)
 
 
 
